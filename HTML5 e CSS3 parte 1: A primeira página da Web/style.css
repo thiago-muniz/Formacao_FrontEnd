@@ -1,0 +1,19 @@
+body{
+    background-color: #cccccc;
+}
+
+#banner{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+}
+
+#missão{
+    font-size: 20px;
+}
+
+em strong{
+    color: #ff0000;
+}
