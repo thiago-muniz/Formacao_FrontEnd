@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="/imagens/logo.png" alt="logo alura"></h1>
+                <h1><img src="/imagens/logo.png" alt="Logo da berbearia alura"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -23,35 +23,43 @@
         <main>
             <form action="">
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome">
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
 
                 <label for="Email">Email</label>
-                <input type="text" id="Email">
+                <input type="email" id="Email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem"></textarea>
-                <div>
-                <p>Como prefere nosso contato?</p>
-                <label for="radio-email">Email</label>
-                <input type="radio" name="contato" id="radio-email" value="email">
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email">Email</label>
+                    
 
-                <label for="radio-telefone">Telefone</label>
-                <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
 
-                <label for="radio-whatsapp">WhatsApp</label>
-                <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
-                </div>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
                 
-                <label for=""><input type="checkbox"> Gostaria de receber nossas novidades por email?</label>
+                </fieldset>
+                <fieldset>    
+                    <legend>Qual horário prefere ser atendido?</legend>
+                        <select name="" id="">
+                            <option value="">Manhã</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noite</option>
+                        </select>
+                </fieldset>
                 
-                <input type="submit" value="Enviar formulário">
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+                
+                <input type="submit" value="Enviar formulário" class="enviar">
             </form>
         </main>
         
         <footer>
-            <img src="/imagens/logo-branco.png" alt="logo alura">
+            <img src="/imagens/logo-branco.png" alt="Logo de Barbearia Alura">
             <p class="copyright">&copy; Copyright Barbearia - 2009</p>
         </footer> 
     </body>
