@@ -4,7 +4,7 @@
     var tela = document.querySelector('canvas');
     var pincel = tela.getContext('2d');
 
-    pincel.fillStyle = 'gray';
+    pincel.fillStyle = 'grey';
     pincel.fillRect(0, 0, 600, 400);
 
     var raio = 10;
@@ -17,8 +17,19 @@
         console.log(x + ',' + y);
 
         if (evento.shiftKey) {
+           if(raio == 40){
+               raio = 40;
+           }else{
+                raio = raio + 10;
+           }
+        }
+        if(evento.altKey){
+            if(raio > 10){
+               raio = raio - 5;
+           }else if(raio == 10){
+                raio = 10;
+           }
 
-           raio = raio + 10; // raio agora passa a valer 20!
         }
 
         pincel.fillStyle = 'blue';
