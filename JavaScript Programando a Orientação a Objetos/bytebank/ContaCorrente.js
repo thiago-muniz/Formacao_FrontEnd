@@ -1,5 +1,7 @@
 export class ContaCorrente{
     agencia;
+    cliente;
+    
     // #saldo = 0; hastag para tornar  o atributo privado
     _saldo = 0;
 
@@ -16,4 +18,14 @@ export class ContaCorrente{
         }
         this._saldo += valor;
     }
+
+    trasferir(valor, conta){
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado);
+    }
+
+
+
 }
+
+
