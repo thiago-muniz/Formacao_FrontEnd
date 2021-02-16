@@ -1,0 +1,14 @@
+Arquitetura CSS: Descomplicando os problemas
+Dia 16/02/2021
+
+Organização de arquivos do site.
+Pasta "assets" é onde normalmente são colocados os arquivos que serão utilizados no site. Folhas de estilo, iamgens, subpastas...
+
+A partir do layout do designer, a construção do site é feita de cima para baixo.
+
+vocabulário:
+banner, cabeçalho, nav, main, header, footer, cards, 
+
+Metodologia atomic design
+
+Parte 2
