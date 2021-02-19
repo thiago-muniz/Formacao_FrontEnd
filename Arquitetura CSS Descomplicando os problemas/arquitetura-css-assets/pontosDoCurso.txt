@@ -12,3 +12,23 @@ banner, cabeçalho, nav, main, header, footer, cards,
 Metodologia atomic design
 
 Parte 2
+
+BEM
+Block Element Modifier
+
+padrão para nomear as classes.
+bloco
+bloco__elemento
+bloco--modificador
+bloco__elemento--modificador
+
+Parte 3
+Parte 4
+uma boa pratica é utilizar os estilos em ordem alfabética.
+facilita a manutenção, quando é necessário editar um estilo.
+
+alt + seta cima ou baixo para subir ou descer a linha do código
+
+Imagens ilustrativas devem estar referenciadas em nossos arquivos .css
+Boas práticas com importação de imagens;
+A manter as estilizações nos arquivos de estilo.
