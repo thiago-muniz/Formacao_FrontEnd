@@ -32,3 +32,5 @@ alt + seta cima ou baixo para subir ou descer a linha do código
 Imagens ilustrativas devem estar referenciadas em nossos arquivos .css
 Boas práticas com importação de imagens;
 A manter as estilizações nos arquivos de estilo.
+parte 5 
+ok
