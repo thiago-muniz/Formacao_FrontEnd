@@ -1,0 +1,82 @@
+.populares{
+    padding: 3rem 2rem; /*espaçamento entre uma seção e outra*/
+}
+
+.populares__conteudo{ /*coloca os cards em flex*/
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: conteudo; /*dizer a area onde os cards devem estar*/
+    padding: 1rem 0;
+
+}
+
+.populares__card{ /* div Pai */
+    background: #fdfdfd; /* cor de fundo que vai entrar em cada card */
+    display: grid; /*inicia o grid*/
+    grid-template-areas: /*Cria as areas dos grids */
+        "card-imagem"
+        "card-corpo";
+    grid-template-rows: 173px auto; /*tamanho imagem 173px e conteudo auto*/
+    grid-template-columns: 100%; /*como deverá ser preenchido a area do grid*/
+    margin-right: 1rem;
+    width: calc(20% - 1rem);
+}
+
+.populares__card:last-child{
+    margin-right 0;
+}
+
+.populares__card___imagem{
+    grid-area: card-imagem; /*Especifica qual area deve se destinar o conteúdo da classe indicada. */
+    height: 100%; /*como deverá ser preenchido a imagem na area do card grid*/
+    width: 100%; /*como deverá ser preenchido a imagem na area do card grid*/
+}
+
+.populares__card___corpo{ /*Um grid dentro do card(grid dentro de grid)*/
+    display: grid; /*aqui inicia um nvo grid dentro do card, só que no corpo*/
+    grid-area: card-corpo;
+    grid-row-gap: .5rem;
+    grid-template-areas: /* novamente especifica as areas desse novo grid*/
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto; /*aqui define o tamanho de cada area. 50px para card-cabecalho e auto para card-conteudo*/
+    padding: .75rem;
+
+}
+
+.populares__card___titulo{
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data{
+    color: #808080;
+    font-size: .9rem;
+}
+.populares__card___descricao{
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.populares__titulo{
+    font-weight: 500;
+}
+
+.populares__icone{
+    margin-right: .25rem;
+}
+
+.populares__cabecalho{
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.populares__botao{
+    background: transparent; /* para retirar o layout do botão*/
+    border: none; /* para retirar a borda do botão*/
+    color: #333333; /* para definir a cor da letra do botão*/
+}
+
