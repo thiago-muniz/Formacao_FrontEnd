@@ -1,5 +1,5 @@
 .populares{
-    padding: 3rem 2rem; /*espaçamento entre uma seção e outra*/
+    padding: 3rem 0; /*espaçamento entre uma seção e outra*/
 }
 
 .populares__conteudo{ /*coloca os cards em flex*/
@@ -16,10 +16,10 @@
     grid-template-areas: /*Cria as areas dos grids */
         "card-imagem"
         "card-corpo";
-    grid-template-rows: 173px auto; /*tamanho imagem 173px e conteudo auto*/
+    /*grid-template-rows: 173px auto; tamanho imagem 173px e conteudo auto / esta no responsivo*/
     grid-template-columns: 100%; /*como deverá ser preenchido a area do grid*/
-    margin-right: 1rem;
-    width: calc(20% - 1rem);
+    /*margin-right: 1rem;  
+    width: calc(20% - 1rem); foi retirado para não repetir no responsivo*/
 }
 
 .populares__card:last-child{

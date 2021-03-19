@@ -1,0 +1,11 @@
+querySelector
+
+tipo de seletor data atributes, é útil para não depender de classes ou id que podem vir a ser modificados
+é um seletor específico para o javaScript
+<p data+nome>
+
+document.querySelector('[data+nome]')
+
+addEventListener 
+
+template strings
