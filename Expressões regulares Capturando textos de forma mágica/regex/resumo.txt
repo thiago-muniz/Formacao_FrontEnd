@@ -1,0 +1,69 @@
+Resposta correta: O caractere "e comercial" (&) não é uma meta-char.
+
+Explicação: Existem alguns caracteres que possuem um significado especial para o regex engine. Especial significa que o regex engine não interpreta o valor literal e sim diferente. Esses caracteres são chamados de meta caracteres.
+
+Nessa aula já vimos alguns:
+
+. o "ponto" que significa qualquer char
+* o asterisco que serve para definir uma quantidade de chars, zero ou mais vezes
+{e } as chaves que servem para definir uma quantidade de caracteres específicas que é desejado encontrar
+Por exemplo:
+
+a{3} letra a 3 vezes.
+\d* um digito zero ou mais vezes
+Lembrando também, se quisermos procurar pelo * ou . literalmente (sem significado especial), devemos utilizar o caractere \
+
+Durante o curso veremos ainda mais meta chars!
+
+
+\d para procurar um dígito
+\d\d\d para procurar uma sequencia de 3 dígitos
+
+.(ponto) tem um significado especial em expressões regulares. é um meta-char. o regex engine interpreta de maneira diferente de um simples ponto.
+para isso é necessário utilizar \.
+
+quantifier
+para evitar repetições, entre chaves, após o código, especifica quantas vezes o código deve repetir.
+\d{3}
+
+para especificar números que podem ter entre 1 e 3. exemplo do ip
+\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}
+
+{1} é um quantifier que significa uma vez.
+* é um quantifier que significa zero, uma ou mais vezes
+. é um meta-char que significa qualquer char.
+Com \ podemos escapar meta-chars, por exemplo \..
+
+A) Extraindo seções específicas de um arquivo de texto
+B) Validação de formatação de, por exemplo, e-mail ou telefone
+C) Análise de arquivos de texto e extração de dados para, por exemplo, gravar no banco de dados
+D) Substituindo os valores de um texto para limpar, reformatar ou alterar o conteúdo
+
+? é um quantifier que avalia se tem ou não o caracter pedido
+    ex: \d\.?\d
+        vai analisar 2 números que podem ou não ter um ponto entre eles.
+
+        0 ou uma vez
+        ou \d\.{0,1}\d
+
+
+[]para definir classe de caracteres que precisam ser textados, analisados
+[.-]
+o ponto dentre de uma classe não é um meta char
+[0123456789] é igual a \d que é igual a [0-9]
+
+\s para verificar espaços
+\s{1,} - verifica um espaço ou mais vezes
+    é igual a \s+
+\s{1,4} - verifica um espaço ou 4
+
+? - zero ou uma vez.
+* - zero ou mais vezes.
++ - uma ou mais vezes.
+{n} - exatamente n vezes.
+{n,} - no mínimo n vezes.
+{n,m} - no mínimo n vezes, no máximo m vezes.
+
+
+
+
